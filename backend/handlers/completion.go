@@ -55,12 +55,6 @@ func HandleCompletion(c *gin.Context) {
 	c.JSON(http.StatusOK, response)
 }
 
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
 
 // generate chat title
 func generateTitleWithGemini(prompt string, apiKey string) (string, error) {
