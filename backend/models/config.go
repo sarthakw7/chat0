@@ -39,7 +39,7 @@ var SupportedModels = map[string]ModelConfig{
 		Provider:  "openai",
 		HeaderKey: "X-OpenAI-API-Key",
 	},
-	"GPT-4.1-mini": {
+	"GPT-4o-mini": {
 		ModelID:   "gpt-4o-mini",
 		Provider:  "openai",
 		HeaderKey: "X-OpenAI-API-Key",
