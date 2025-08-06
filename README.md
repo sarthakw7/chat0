@@ -36,13 +36,22 @@ To run Chat0 locally, you'll need to follow these steps:
    ```bash
    pnpm install
    ```
+3. **Run the Go backend:**
+   Open a new terminal and run:
+   ```bash
+   cd backend
+   go mod tidy
+   go run main.go
+   ```
+   The Go backend will start on [http://localhost:8080] by default.
+   Make sure you have Go installed (go version).
 
-3. **Run the development server:**
+4. **Run the frontend development server:**
    ```bash
    pnpm dev
    ```
 
-4. **Open your browser:**
+5. **Open your browser:**
    Navigate to [http://localhost:3000](http://localhost:3000) to see the application in action.
 
 ## 🐛 Issues & Support
