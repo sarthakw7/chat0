@@ -12,6 +12,7 @@ import { SidebarTrigger, useSidebar } from './ui/sidebar';
 import { Button } from './ui/button';
 import { MessageSquareMore } from 'lucide-react';
 import { useChatNavigator } from '@/frontend/hooks/useChatNavigator';
+import { API_ENDPOINTS } from '../config/api';
 
 interface ChatProps {
   threadId: string;
@@ -42,6 +43,7 @@ export default function Chat({ threadId, initialMessages }: ChatProps) {
     reload,
     error,
   } = useChat({
+    api: API_ENDPOINTS.CHAT,
     id: threadId,
     initialMessages,
     experimental_throttle: 50,
