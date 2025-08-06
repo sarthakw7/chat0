@@ -100,7 +100,7 @@ func HandleChat(c *gin.Context) {
 func streamMockResponse(w gin.ResponseWriter, req types.ChatRequest) {
 	lastMessage := req.Messages[len(req.Messages)-1]
 	
-	words := []string{"Mock","streaming","response","to","your","nessage", lastMessage.Content}
+	words := []string{"Mock","streaming","response","to","your","message", lastMessage.Content}
 
 	for _, word := range words {
 		// AI SDK data stream format
